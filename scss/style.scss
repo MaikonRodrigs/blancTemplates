@@ -1,0 +1,137 @@
+// ### Global Settings ### //
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  transition: all 400ms ease;
+  scroll-behavior: smooth;
+}
+
+html, 
+border-style,
+#root {
+  max-height: 100vh;
+  max-width: 100%; 
+  width: 100%;
+  height: 100%;
+}
+
+*,
+button,
+input {
+  border: 0;
+  background: none;
+  font-family: Tahoma, sans-serif;
+}
+
+html {
+  background: var(--white);
+  color: var(--black);
+}
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+:root {
+  --primary: blueviolet;
+  --secondary: #e3262e;
+  --orange: #ffbc4a;
+  --white: #ffffff;
+  --black: #000;
+  --gray: #7a7a7a;
+
+  --desktop: 1280px;
+  --tablet: 768px;
+  --mobile: 420px;
+}
+
+$desktop: 1280px;
+$tablet: 768px;
+$mobile: 420px;
+
+// ### FONTES EXTERNAS ### //
+
+@font-face {
+  font-family: dinRegular;
+  src: url(../assets/fonts/din_regular.eot);
+}
+// ### FONTES EXTERNAS ### //
+
+// ### HEADER STYLE ### //
+
+header {
+  .header {
+  }
+}
+@media (max-width: $tablet) {
+  header {
+    .header {
+  }
+}
+
+// ### HEADER STYLE ### //
+
+// ### BANNER STYLE ### //
+
+.banner {
+}
+
+@media (max-width: $mobile) {
+  .banner {
+  }
+}
+// ### BANNER STYLE ### //
+
+// ### FOOTER STYLE ### //
+footer {
+  .footer {}
+  }
+}
+
+@media (max-width: $tablet) {
+  footer {
+    .footer {
+    }
+  }
+}
+
+// ### FOOTER STYLE ### //
+
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92vh;
+  width: 100%;
+  flex-direction: column;
+
+  &__image {
+    cursor: pointer;
+  }
+  &__img {
+    width: 25.5rem;
+    height: 25.5rem;
+    &:hover {
+      opacity: .8;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__subtitle {
+    color: var(--gray);
+  }
+  &__project {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    font-size: .7rem;
+  }
+} 
